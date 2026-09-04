@@ -18,7 +18,7 @@ const SideBar = () => {
         setMobileOpen(false)
     }, [pathname])
 
-    const role = ""||"EMPLOYEE";
+    const role = "ADMIN"||"EMPLOYEE";
 
     const navItems = [
         {
