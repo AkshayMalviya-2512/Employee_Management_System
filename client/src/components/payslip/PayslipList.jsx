@@ -29,8 +29,7 @@ const PayslipList = ({payslips, isAdmin}) => {
                                 <tr key={payslip._id || payslip.id}>
                                     {isAdmin && (
                                         <td className='text-fuchsia-700'>
-                                            {payslip.employee?.firstName}
-                                            {payslip.employee?.lastName}
+                                            {payslip.employee?.firstName} {payslip.employee?.lastName}
                                         </td>
                                     )}
 
@@ -48,9 +47,9 @@ const PayslipList = ({payslips, isAdmin}) => {
 
                                     <td className='text-center' >
                                         <button onClick={() => window.open(`/print/payslips/${payslip.id || payslip.id}`)}
-                                            className='inline flex items-center px-3 py-1.5 text-xs font-md rounded-full
-                                            bg-emerald-200 text-rose-500 hover:bg-cyan-200 hover:text-violet-500 transition-all'>
-                                            <Download className='w-4 h-4 mr-1.5'/>Download
+                                            className='inline flex items-center px-4 py-2 text-xs font-md rounded-xl
+                                            bg-emerald-200 text-rose-500 hover:bg-rose-200 hover:text-violet-500 transition-all'>
+                                            <Download className='w-4 h-4 mr-2'/>Download
                                         </button>
                                     </td>
 
